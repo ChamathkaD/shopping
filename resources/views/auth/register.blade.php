@@ -33,7 +33,6 @@
                                                 <input
                                                     id="name"
                                                     type="text"
-                                                    required
                                                     name="name"
                                                     placeholder="Username"
 
@@ -43,7 +42,6 @@
                                                 <input
                                                     id="email"
                                                     type="text"
-                                                    required
                                                     name="email"
                                                     placeholder="Email"
                                                 >
@@ -51,7 +49,6 @@
                                             <div class="form-group">
                                                 <input
                                                     id="password"
-                                                    required
                                                     type="password"
                                                     name="password"
                                                     placeholder="Password">
@@ -59,7 +56,6 @@
                                             <div class="form-group">
                                                 <input
                                                         id="password_confirmation"
-                                                        required
                                                         type="password"
                                                         name="password_confirmation"
                                                         placeholder="Confirm password">
@@ -67,7 +63,7 @@
                                             <div class="login_footer form-group">
                                                 <div class="chek-form">
                                                     <div class="custome-checkbox">
-                                                        <input class="form-check-input" type="checkbox" name="terms_policy" id="terms_policy" value="" required>
+                                                        <input class="form-check-input" type="checkbox" name="terms_policy" id="terms_policy" value="1" >
                                                         <label class="form-check-label" for="terms_policy"><span>I agree to terms &amp; Policy.</span></label>
                                                     </div>
                                                 </div>
@@ -95,9 +91,6 @@
         </section>
     </main>
    <x-footer/>
-    <x-preloader-start/>
-
-
 
 </x-guest-layout>
 

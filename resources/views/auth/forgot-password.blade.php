@@ -22,7 +22,7 @@
                                         <div class="heading_s1">
                                             <h3 class="mb-10">Forgot Password</h3>
                                         </div>
-                                        <p class="mb-50 font-sm">
+                                        <p class="mb-3 font-sm">
                                             {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
                                         </p>
 
@@ -49,14 +49,7 @@
                                                 <button type="submit" class="btn btn-fill-out btn-block hover-up" >{{ __('Email Password Reset Link') }}</button>
                                             </div>
                                         </form>
-                                        <div class="divider-text-center mt-15 mb-15">
-                                            <span> or</span>
-                                        </div>
-                                        <ul class="btn-login list_none text-center mb-15">
-                                            <li><a href="#" class="btn btn-facebook hover-up mb-lg-0 mb-sm-4">Login With Facebook</a></li>
-                                            <li><a href="#" class="btn btn-google hover-up">Login With Google</a></li>
-                                        </ul>
-                                        <div class="text-muted text-center">Already have an account? <a href="{{ route('login') }}">Sign in now</a></div>
+
                                     </div>
                                 </div>
                             </div>

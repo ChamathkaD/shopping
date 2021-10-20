@@ -13,7 +13,7 @@
         <section class="pt-20 pb-20">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 m-auto">
+                    <div class="col-lg-10 m-auto  ">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="login_wrap widget-taber-content p-30 background-white border-radius-10 mb-md-5 mb-lg-0 mb-sm-5">
