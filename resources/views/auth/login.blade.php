@@ -46,7 +46,7 @@
                                             <div class="login_footer form-group">
                                                 <div class="chek-form">
                                                     <div class="custome-checkbox">
-                                                        <input class="form-check-input" type="checkbox" name="checkbox" id="remember_me" value="">
+                                                        <input class="form-check-input" type="checkbox" name="remember_me" id="remember_me" value="">
                                                         <label class="form-check-label" for="remember_me"><span>Remember me</span></label>
                                                     </div>
                                                 </div>
@@ -69,21 +69,7 @@
         </section>
     </main>
     <x-footer/>
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="text-center">
-                    <h5 class="mb-5">Now Loading</h5>
-                    <div class="loader">
-                        <div class="bar bar1"></div>
-                        <div class="bar bar2"></div>
-                        <div class="bar bar3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <x-preloader-start/>
 
 </x-guest-layout>
 

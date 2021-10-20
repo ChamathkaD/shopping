@@ -13,9 +13,9 @@
         <section class="pt-20 pb-20">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 m-auto">
+                    <div class="col-lg-10 m-auto d-flex justify-content-center w-50">
                         <div class="row">
-                            <div class="col-lg-1"></div>
+
                             <div class="col-lg-12">
                                 <div class="login_wrap widget-taber-content p-30 background-white border-radius-5">
                                     <div class="padding_eight_all bg-white">
@@ -67,8 +67,8 @@
                                             <div class="login_footer form-group">
                                                 <div class="chek-form">
                                                     <div class="custome-checkbox">
-                                                        <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox12" value="">
-                                                        <label class="form-check-label" for="exampleCheckbox12"><span>I agree to terms &amp; Policy.</span></label>
+                                                        <input class="form-check-input" type="checkbox" name="terms_policy" id="terms_policy" value="" required>
+                                                        <label class="form-check-label" for="terms_policy"><span>I agree to terms &amp; Policy.</span></label>
                                                     </div>
                                                 </div>
                                                 <a href="page-privacy-policy.html"><i class="fi-rs-book-alt mr-5 text-muted"></i>Lean more</a>
@@ -84,7 +84,7 @@
                                             <li><a href="#" class="btn btn-facebook hover-up mb-lg-0 mb-sm-4">Login With Facebook</a></li>
                                             <li><a href="#" class="btn btn-google hover-up">Login With Google</a></li>
                                         </ul>
-                                        <div class="text-muted text-center">Already have an account? <a href="#">Sign in now</a></div>
+                                        <div class="text-muted text-center">Already have an account? <a href="{{ route('login') }}">Sign in now</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -95,22 +95,9 @@
         </section>
     </main>
    <x-footer/>
+    <x-preloader-start/>
 
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="text-center">
-                    <h5 class="mb-5">Now Loading</h5>
-                    <div class="loader">
-                        <div class="bar bar1"></div>
-                        <div class="bar bar2"></div>
-                        <div class="bar bar3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 </x-guest-layout>
 

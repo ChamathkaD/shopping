@@ -27,12 +27,13 @@
                             <li>
                                 <a class="language-dropdown-active" href="#"> <i class="fi-rs-world"></i> English <i class="fi-rs-angle-small-down"></i></a>
                                 <ul class="language-dropdown">
-                                    <li><a href="#"><img src="assets/imgs/theme/flag-fr.png" alt="">Français</a></li>
-                                    <li><a href="#"><img src="assets/imgs/theme/flag-dt.png" alt="">Deutsch</a></li>
-                                    <li><a href="#"><img src="assets/imgs/theme/flag-ru.png" alt="">Pусский</a></li>
+                                    <li><a href="#"><img src="{{ asset('assets/imgs/theme/flag-fr.png') }}" alt="">Français</a></li>
+                                    <li><a href="#"><img src="{{ asset('assets/imgs/theme/flag-dt.png') }}" alt="">Deutsch</a></li>
+                                    <li><a href="#"><img src="{{ asset('assets/imgs/theme/flag-ru.png') }}" alt="">Pусский</a></li>
                                 </ul>
                             </li>
-                            <li><i class="fi-rs-user"></i><a href="page-login-register.html">Log In / Sign Up</a></li>
+                            <li><i class="fi-rs-user"></i><a href="page-login-register.html">Log In </a></li>
+                            <li><i class="fi-rs-user"></i><a href="page-login-register.html">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,7 +44,7 @@
         <div class="container">
             <div class="header-wrap header-space-between position-relative">
                 <div class="logo logo-width-1">
-                    <a href="index.html"><img src="assets/imgs/theme/logo.svg" alt="logo"></a>
+                    <a href="index.html"><img src="{{ asset('assets/imgs/theme/logo.svg') }}" alt="logo"></a>
                 </div>
                 <div class="main-menu main-menu-grow main-menu-padding-1 main-menu-lh-1 main-menu-mrg-1 hm3-menu-padding d-none d-lg-block hover-boder">
                     <nav>
@@ -113,7 +114,7 @@
                                     </li>
                                     <li class="sub-mega-menu sub-mega-menu-width-34">
                                         <div class="menu-banner-wrap">
-                                            <a href="shop-product-right.html"><img src="assets/imgs/banner/menu-banner.jpg" alt="Evara"></a>
+                                            <a href="shop-product-right.html"><img src="{{ asset('assets/imgs/banner/menu-banner.jpg') }}" alt="Evara"></a>
                                             <div class="menu-banner-content">
                                                 <h4>Hot deals</h4>
                                                 <h3>Don't miss<br> Trending</h3>
@@ -189,20 +190,20 @@
                     <div class="header-action-2">
                         <div class="header-action-icon-2">
                             <a href="shop-wishlist.html">
-                                <img class="svgInject" alt="Evara" src="assets/imgs/theme/icons/icon-heart.svg">
+                                <img class="svgInject" alt="Evara" src="{{ asset('assets/imgs/theme/icons/icon-heart.svg') }}">
                                 <span class="pro-count blue">4</span>
                             </a>
                         </div>
                         <div class="header-action-icon-2">
                             <a class="mini-cart-icon" href="shop-cart.html">
-                                <img alt="Evara" src="assets/imgs/theme/icons/icon-cart.svg">
+                                <img alt="Evara" src="{{ asset('assets/imgs/theme/icons/icon-cart.svg') }}">
                                 <span class="pro-count blue">2</span>
                             </a>
                             <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                 <ul>
                                     <li>
                                         <div class="shopping-cart-img">
-                                            <a href="shop-product-right.html"><img alt="Evara" src="assets/imgs/shop/thumbnail-3.jpg"></a>
+                                            <a href="shop-product-right.html"><img alt="Evara" src="{{ asset('assets/imgs/shop/thumbnail-3.jpg') }}"></a>
                                         </div>
                                         <div class="shopping-cart-title">
                                             <h4><a href="shop-product-right.html">Plain Striola Shirts</a></h4>
@@ -214,7 +215,7 @@
                                     </li>
                                     <li>
                                         <div class="shopping-cart-img">
-                                            <a href="shop-product-right.html"><img alt="Evara" src="assets/imgs/shop/thumbnail-1.jpg"></a>
+                                            <a href="shop-product-right.html"><img alt="Evara" src="{{ asset('assets/imgs/shop/thumbnail-1.jpg') }}"></a>
                                         </div>
                                         <div class="shopping-cart-title">
                                             <h4><a href="shop-product-right.html">Macbook Pro 2022</a></h4>
