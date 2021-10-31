@@ -14,10 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 
 Route::get('/home', function () {
-    return view('home');
+    return view('index');
 })->middleware(['auth','verified']);
+
+
+Route::get('user/account',[\App\Http\Controllers\UserProfileController::class, 'account'])->name('account')->middleware(['auth','verified']);
+
+
+Route::get('user/account/profile/newAddress',[\App\Http\Controllers\UserProfileController::class, 'newAddress'])->name('profile.newAddress')->middleware(['auth','verified']);
