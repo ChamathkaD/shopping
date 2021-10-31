@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <x-auth-header/>
+
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
@@ -34,24 +34,42 @@
                                                     id="name"
                                                     type="text"
                                                     name="name"
+                                                    class="form-control @error('name') is-invalid @enderror"
                                                     placeholder="Username"
 
                                                 >
+                                                @error('name')
+                                                <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                                                @enderror
                                             </div>
                                             <div class="form-group">
                                                 <input
                                                     id="email"
                                                     type="text"
+                                                    class="form-control @error('email') is-invalid @enderror"
                                                     name="email"
                                                     placeholder="Email"
                                                 >
+                                                @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                                                @enderror
                                             </div>
                                             <div class="form-group">
                                                 <input
                                                     id="password"
                                                     type="password"
+                                                    class="form-control @error('password') is-invalid @enderror"
                                                     name="password"
                                                     placeholder="Password">
+                                                @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                                                @enderror
                                             </div>
                                             <div class="form-group">
                                                 <input
@@ -59,14 +77,23 @@
                                                         type="password"
                                                         name="password_confirmation"
                                                         placeholder="Confirm password">
+
                                             </div>
                                             <div class="login_footer form-group">
                                                 <div class="chek-form">
-                                                    <div class="custome-checkbox">
-                                                        <input class="form-check-input" type="checkbox" name="terms_policy" id="terms_policy" value="1" >
+                                                    <div class="custome-checkbox ">
+                                                        <input class="form-check-input form-control @error('terms_policy') is-invalid @enderror" type="checkbox" name="terms_policy" id="terms_policy" value="1" >
                                                         <label class="form-check-label" for="terms_policy"><span>I agree to terms &amp; Policy.</span></label>
+                                                        @error('terms_policy')
+                                                        <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                                                        @enderror
+
                                                     </div>
+
                                                 </div>
+
                                                 <a href="page-privacy-policy.html"><i class="fi-rs-book-alt mr-5 text-muted"></i>Lean more</a>
                                             </div>
                                             <div class="form-group">
@@ -90,7 +117,7 @@
             </div>
         </section>
     </main>
-   <x-footer/>
+
 
 </x-guest-layout>
 

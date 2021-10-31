@@ -21,11 +21,12 @@
 
 </head>
 <body>
+<x-auth-header/>
 <div class="font-sans text-gray-900 antialiased">
     {{ $slot }}
 </div>
 
-
+<x-footer/>
 <!-- Vendor JS-->
 <script src="{{ asset('assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
 <script src="{{ asset('assets/js/vendor/jquery-3.6.0.min.js') }}"></script>

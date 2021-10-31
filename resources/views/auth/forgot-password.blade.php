@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <x-auth-header/>
+
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
@@ -13,7 +13,7 @@
         <section class="pt-20 pb-20">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 m-auto">
+                    <div class="col-lg-10 m-auto d-flex justify-content-center w-50">
                         <div class="row">
                             <div class="col-lg-1"></div>
                             <div class="col-lg-12">
@@ -22,27 +22,32 @@
                                         <div class="heading_s1">
                                             <h3 class="mb-10">Forgot Password</h3>
                                         </div>
-                                        <p class="mb-3 font-sm">
-                                            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-                                        </p>
 
                                         <x-auth-session-status class="mb-4" :status="session('status')" />
 
                                         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
+                                        <p class="mb-3 font-sm">
+                                            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+                                        </p>
 
-                                        <form action="{{route('password.email')}}" method="post">
+                                                                               <form action="{{route('password.email')}}" method="post">
                                             @csrf
 
                                             <div class="form-group">
                                                 <input
                                                     id="email"
                                                     type="text"
-                                                    required
+                                                    class="form-control @error('email') is-invalid @enderror"
                                                     name="email"
                                                     placeholder="Email"
-                                                    :value="old('email')"
+                                                    value="{{ old('email') }}"
                                                 >
+                                                @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                @enderror
                                             </div>
 
                                             <div class="form-group">
@@ -59,22 +64,7 @@
             </div>
         </section>
     </main>
-    <x-footer/>
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="text-center">
-                    <h5 class="mb-5">Now Loading</h5>
-                    <div class="loader">
-                        <div class="bar bar1"></div>
-                        <div class="bar bar2"></div>
-                        <div class="bar bar3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 </x-guest-layout>
 
